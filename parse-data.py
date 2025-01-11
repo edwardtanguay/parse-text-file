@@ -67,9 +67,12 @@ def main():
         return
 
     try:
-        with open(file_path, "r") as file:
-            lines = file.readlines()
-        print(lines)
+        input_file = file_path
+        output_file = "data.json"
+
+        parser = BlogParser()
+        blog_entries = parser.parse_file(input_file)
+        parser.write_to_json(blog_entries, output_file)
     except Exception as e:
         print(f"Error reading the file: {e}")
 
