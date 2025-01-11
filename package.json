@@ -1,0 +1,12 @@
+{
+  "name": "parse-text-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pd": "python parse-data.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
